@@ -4,6 +4,7 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
+import { useInspectAppState } from '@/modules/inspect-app-state/src/useInspectAppState';
 
 import { useColorScheme } from '@/components/useColorScheme';
 
@@ -25,6 +26,8 @@ export default function RootLayout() {
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     ...FontAwesome.font,
   });
+
+  useInspectAppState();
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {

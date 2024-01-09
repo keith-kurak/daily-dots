@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.keithkurak.dailydots"
     },
     "android": {
       "adaptiveIcon": {
@@ -34,6 +35,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "40189619-57dd-4ebb-833d-f38776bc15c1"
+      }
     }
   }
 }
